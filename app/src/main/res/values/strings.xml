@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EjercicioTaxiApp</string>
+
+    <string-array name="ciudades2">
+        <item>Madrid</item>
+        <item>Santander</item>
+        <item>Santiago</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecogidaActivity">
+
+    <TextView
+        android:id="@+id/CiudadOrigen"
+        android:layout_width="355dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="Selecciona tu ciudad origen:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerCiudadOrigen"
+        android:layout_width="373dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/ciudades2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CiudadOrigen" />
+
+    <TextView
+        android:id="@+id/CiudadesDestino"
+        android:layout_width="355dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="Selecciona una ciudad para tu destino:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCiudadOrigen" />
+
+    <Spinner
+        android:id="@+id/spinnerCiudades"
+        android:layout_width="373dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/ciudades2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CiudadesDestino" />
+
+    <EditText
+        android:id="@+id/editTextFecha"
+        android:layout_width="163dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Fecha:"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCiudades" />
+
+    <EditText
+        android:id="@+id/editTextHora"
+        android:layout_width="163dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Hora:"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/editTextFecha"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCiudades" />
+
+    <!-- EditText para la fecha de vuelta (añadir lo de android:clickable="true" y android:focusable="false") -->
+    <!-- EditText para la hora de vuelta (añadir lo de android:clickable="true" y android:focusable="false") -->
+
+    <EditText
+        android:id="@+id/editTextFechaVuelta"
+        android:layout_width="163dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Fecha de vuelta:"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFecha" />
+
+
+    <EditText
+        android:id="@+id/editTextHoraVuelta"
+        android:layout_width="163dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Hora de vuelta:"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/editTextFechaVuelta"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHora" />
+
+    <TextView
+        android:id="@+id/TipoViaje"
+        android:layout_width="352dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="76dp"
+        android:hint="Selecciona el tipo de viaje:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFecha" />
+
+    <RadioGroup
+        android:id="@+id/opciones"
+        android:layout_width="356dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TipoViaje">
+
+        <RadioButton
+            android:id="@+id/ida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="solo ida" />
+
+        <RadioButton
+            android:id="@+id/idaYvuelta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ida y vuelta" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="353dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="Pon tu nombre:"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opciones" />
+
+    <EditText
+        android:id="@+id/editTextDirección"
+        android:layout_width="353dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Pon tu dirección:"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+    <EditText
+        android:id="@+id/editTextDni"
+        android:layout_width="353dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Pon tu DNI (obligatorio):"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDirección" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="9dp"
+        android:text="Finalizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDni" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResumenActivity">
+
+        <TextView
+            android:id="@+id/TextViewMostrarResumen"
+            android:layout_width="353dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:text="Resumen de los datos introducidos:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTipoViaje"
+            android:layout_width="353dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextViewMostrarResumen"
+            tools:layout_conversion_absoluteHeight="74dp"
+            tools:layout_conversion_absoluteWidth="229dp" />
+
+        <TextView
+            android:id="@+id/textViewCiudadOrigen"
+            android:layout_width="353dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTipoViaje"
+            tools:layout_conversion_absoluteHeight="74dp"
+            tools:layout_conversion_absoluteWidth="229dp" />
+
+        <TextView
+            android:id="@+id/textViewCiudadDestino"
+            android:layout_width="353dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCiudadOrigen"
+            tools:layout_conversion_absoluteHeight="74dp"
+            tools:layout_conversion_absoluteWidth="229dp" />
+
+        <TextView
+            android:id="@+id/textViewFecha"
+            android:layout_width="353dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCiudadDestino"
+            tools:layout_conversion_absoluteHeight="74dp"
+            tools:layout_conversion_absoluteWidth="229dp" />
+
+        <TextView
+            android:id="@+id/textViewHora"
+            android:layout_width="353dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFecha"
+            tools:layout_conversion_absoluteHeight="74dp"
+            tools:layout_conversion_absoluteWidth="229dp" />
+
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="353dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewHora"
+            tools:layout_conversion_absoluteHeight="74dp"
+            tools:layout_conversion_absoluteWidth="229dp" />
+
+        <TextView
+            android:id="@+id/textViewDireccion"
+            android:layout_width="353dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNombre"
+            tools:layout_conversion_absoluteHeight="74dp"
+            tools:layout_conversion_absoluteWidth="229dp" />
+
+        <TextView
+            android:id="@+id/textViewDni"
+            android:layout_width="353dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDireccion"
+            tools:layout_conversion_absoluteHeight="74dp"
+            tools:layout_conversion_absoluteWidth="229dp" />
+
+        <TextView
+            android:id="@+id/textViewFechaVuelta"
+            android:layout_width="353dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDni"
+            tools:layout_conversion_absoluteHeight="74dp"
+            tools:layout_conversion_absoluteWidth="229dp" />
+
+        <TextView
+            android:id="@+id/textViewHoraVuelta"
+            android:layout_width="353dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFechaVuelta"
+            tools:layout_conversion_absoluteHeight="74dp"
+            tools:layout_conversion_absoluteWidth="229dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
